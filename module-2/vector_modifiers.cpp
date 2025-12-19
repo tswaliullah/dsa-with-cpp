@@ -21,14 +21,19 @@ int main()
     // for (int x : v)
     //     cout << x << " ";
 
-    auto it = find(v.begin(), v.end(), 100);
-    if (it == v.end())
+    // auto it = find(v.begin(), v.end(), 3);   // working with iterator
+    // if (it == v.end())
+    // {
+    //     cout << "Not found";
+    // }
+    // else
+    // {
+    //     cout << "Found";
+    // }
+
+    for (auto it = v.begin(); it < v.end(); it++)
     {
-        cout << "Not found";
-    }
-    else
-    {
-        cout << "Found";
+        cout << *it << " ";
     }
 
     return 0;
