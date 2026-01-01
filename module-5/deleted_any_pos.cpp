@@ -69,7 +69,7 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
-    // delete_at_any_pos(head, 2);      
+    // delete_at_any_pos(head, 2);       
     print_linked_list(head);
 
     return 0;
