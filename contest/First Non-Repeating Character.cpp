@@ -6,7 +6,7 @@ int main()
     string s;
     cin >> s;
 
-    int fre[26] = {26};
+    int fre[26] = {};
 
     for (int i = 0; i < s.size(); i++)
     {
