@@ -30,6 +30,20 @@ void insert_into_head(Node *&head, Node *&tail, int val)
     head = newNode;
 }
 
+void insert_into_any_pos(Node *head, int idx, int val)
+{
+    Node *newNode = new Node(val);
+    Node *tmp = head;
+    for (int i = 1; i < idx; i++)
+    {
+        tmp = tmp->next;
+    }
+    newNode->next = tmp->next;
+    tmp->next->prev = newNode;
+    tmp->next = newNode;
+    newNode->prev = tmp;
+}
+
 void print_forward(Node *head)
 {
     Node *tmp = head;
