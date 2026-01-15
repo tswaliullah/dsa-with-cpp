@@ -15,7 +15,14 @@ int main()
 
     // l.insert(next(l.begin(), 1), 33);
 
-    l.erase(next(l.begin(), 2));
+    // l.erase(next(l.begin(), 2));
+    // l.erase(next(l.begin(), 2), next(l.begin(), 5));
+
+    auto it = find(l.begin(), l.end(), 3);
+    if (it == l.end())
+        cout << "Not Found" << endl;
+    else
+        cout << "Found";
 
     for (int val : l)
     {
