@@ -9,9 +9,17 @@ int main()
     list<int> l3(10, 3); // print wiht iterator + dereference
 
     // cout << l2.size();
-    for (auto it = l3.begin(); it != l3.end(); it++)
+    // for (auto it = l3.begin(); it != l3.end(); it++)
+    // {
+    //     cout << *it << endl;
+    // }
+
+    list<int> l4 = {1, 2, 3, 4, 5, 6, 8};
+    list<int> l5(l4);
+
+    for (int val : l5)
     {
-        cout << *it << endl;
+        cout << val << endl;
     }
 
     return 0;
