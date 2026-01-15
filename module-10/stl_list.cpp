@@ -17,7 +17,10 @@ int main()
     list<int> l4 = {1, 2, 3, 4, 5, 6, 8};
     list<int> l5(l4);
 
-    for (int val : l5)
+    int a[] = {10, 20, 30, 40};
+    list<int> l6(a, a+4);
+
+    for (int val : l6)
     {
         cout << val << endl;
     }
