@@ -11,10 +11,12 @@ int main()
     l.push_back(99);
     l.push_front(100);
 
-    for (int val : l)
-    {
-        cout << val << endl;
-    }
+    cout << *next(l.begin(), 2); // index
+
+    // for (int val : l)
+    // {
+    //     cout << val << endl;
+    // }
 
     return 0;
 }
